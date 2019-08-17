@@ -32,8 +32,7 @@ public class Exam4 {
 			} else {
 				System.out.println("평균입니다.");
 			}	
-		} else if(sex.equals("여자")) {
-			
+		} else if(sex.equals("여자")) {			
 			if(STAND_WOMAN_HEIGHT > height) {
 				System.out.println("평균 이하입니다.");
 			} else if(STAND_WOMAN_HEIGHT < height) {
@@ -45,6 +44,7 @@ public class Exam4 {
 		} else {
 			System.out.println("잘 못 입력하셨습니다.");
 		}
+		
 		System.out.println("종료");
 		scan.close();
 	}
