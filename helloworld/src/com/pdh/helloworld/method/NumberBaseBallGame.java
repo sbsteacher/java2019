@@ -13,7 +13,7 @@ public class NumberBaseBallGame {
 		
 		while(true) {
 			for(int i=0; i<myNumberArray.length; i++) {
-				System.out.printf("%d¹øÂ° ¼ýÀÚ ÀÔ·Â : ", (i+1));
+				System.out.printf("%dë²ˆì§¸ ìˆ«ìž ìž…ë ¥ : ", (i+1));
 				int value = scan.nextInt();
 				myNumberArray[i] = value;
 			}
@@ -22,7 +22,7 @@ public class NumberBaseBallGame {
 				break;
 			}
 		}
-		System.out.println("-- Á¾·á --");		
+		System.out.println("-- ì¢…ë£Œ --");		
 		scan.close();
 	}
 	

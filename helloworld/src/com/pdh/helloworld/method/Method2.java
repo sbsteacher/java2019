@@ -9,7 +9,7 @@ public class Method2 {
 	}
 	
 	public static void hello() {
-		System.out.printf("¾È³ç ³» ³ªÀÌ´Â  %dÀÔ´Ï´Ù.\n", age);
+		System.out.printf("ì•ˆë…• ë‚´ ë‚˜ì´ëŠ”  %dì…ë‹ˆë‹¤.\n", age);
 	}
 	
 	public static String hi() {
