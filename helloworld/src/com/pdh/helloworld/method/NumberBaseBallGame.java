@@ -8,15 +8,16 @@ public class NumberBaseBallGame {
 		
 		final int[] randomArray = getRandomArray(gameNumberCount);		
 		final int[] myNumberArray = new int[gameNumberCount];
-		/*
+	
 		for(int r : randomArray) {
 			System.out.print(r + ", ");
 		}
 		System.out.println();
-		*/
+	
 		Scanner scan = new Scanner(System.in);
-		
+		int cnt = 0;
 		while(true) {
+			cnt++;
 			for(int i=0; i<myNumberArray.length; i++) {
 				System.out.printf("%d번째 숫자 입력 : ", (i+1));
 				int value = scan.nextInt();
@@ -28,7 +29,7 @@ public class NumberBaseBallGame {
 				break;
 			}
 		}
-		System.out.println("-- 종료 --");		
+		System.out.printf("-- 종료 -- (%d번 사용)", cnt);		
 		scan.close();
 	}
 	
@@ -58,7 +59,7 @@ public class NumberBaseBallGame {
 	
 	//(몇개)랜덤한 숫자를 담은 배열을 리턴하는 메소드
 	public static int[] getRandomArray(final int num) {
-		int[] array = new int[num];		
+		int[] array = new int[num];
 		
 		for(int i=0; i<array.length; i++) {
 			int randomValue = (int)(Math.random() * 9) + 1;  //6
